@@ -1,0 +1,53 @@
+<ion-content>
+
+  <div *ngIf="picture">
+    <img [src]="picture">
+    <!-- Start Camera -->
+    <ion-fab vertical="bottom" horizontal="center">
+      <ion-fab-button (click)="startCamera()">
+        <ion-icon style="font-size:34px" name="arrow-dropleft"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+
+  <div *ngIf="!picture">
+
+    <!-- gif's -->
+    
+    <!-- Top Left -->
+    <div *ngIf="showGifOne" class="top-left-gif">
+      <img style="width: 100px;" src="https://thumbs.gfycat.com/JaggedWiltedAfricanbushviper-max-1mb.gif" title="this slowpoke moves" />
+    </div>
+    <!-- Top Right -->
+    <div *ngIf="showGifOne" class="top-right-gif">
+      <img style="width: 100px;" src="https://thumbs.gfycat.com/JaggedWiltedAfricanbushviper-max-1mb.gif"
+        title="this slowpoke moves" />
+    </div>
+    <!-- Bottom Left -->
+    <div *ngIf="showGifTwo" class="bottom-left-gif">
+      <img style="width: 100px;" src="https://thumbs.gfycat.com/JaggedWiltedAfricanbushviper-max-1mb.gif"
+        title="this slowpoke moves" />
+    </div>
+    <!-- Bottom Right -->
+    <div *ngIf="showGifTwo" class="bottom-right-gif">
+      <img style="width: 100px;" src="https://thumbs.gfycat.com/JaggedWiltedAfricanbushviper-max-1mb.gif"
+        title="this slowpoke moves" />
+    </div>
+
+    <!-- Take Picture -->
+    <ion-fab vertical="bottom" horizontal="center">
+      <ion-fab-button ion-fab (click)="takePicture()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <!-- Switch Camera -->
+    <ion-fab vertical="bottom" horizontal="end">
+      <ion-fab-button ion-fab (click)="switchCamera()">
+        <ion-icon name="reverse-camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,28 @@
+ion-content { 
+    --background: transparent !important; 
+}
+
+.top-left-gif {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.bottom-left-gif {
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+}
+
+.top-right-gif {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+
+.bottom-right-gif {
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+}
+

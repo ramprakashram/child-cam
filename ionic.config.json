@@ -1,0 +1,7 @@
+{
+  "name": "child_cam_v2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
